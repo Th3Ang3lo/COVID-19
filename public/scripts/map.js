@@ -1,4 +1,4 @@
-var map = L.map('mapid', {
+const map = L.map('mapid', {
     center: [-20.231, -44.250],
     zoom: 4,
     zoomControl: false
