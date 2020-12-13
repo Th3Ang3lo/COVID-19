@@ -7,6 +7,17 @@
 }
 
 html {
-    font-family: 'Nunito', sans-serif;
     font-size: 62.5%;
+}
+
+.page-container {
+    width: 100vw;
+    height: 100vh;
+
+    background: #141414;
+}
+
+#mapid {
+    width: 100vw;
+    height: 100vh;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19</title>
+
+    <!-- map configuration -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+   <!-- icon configuration -->
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+   <!-- styles -->
+   <link rel="stylesheet" href="public/styles/main.css">
+   <link rel="stylesheet" href="public/styles/buttons.css">
+   <link rel="stylesheet" href="public/styles/cases.css">
+   <link rel="stylesheet" href="public/styles/dead.css">
+   <link rel="stylesheet" href="public/styles/cured.css">
+   <link rel="stylesheet" href="public/styles/countries.css">
+
+</head>
+<body>
+    <div class="page-container">
+        <div id="mapid"></div>
+        <div class="search-box">
+            <input type="text" placeholder="Digite o nome país">
+            <div class="search-button">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="close-search-button">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <input type="checkbox" id="voice" style="display: none;">
+        <label for="voice">
+            <div class="voice-button">
+                <i class="fas fa-microphone"></i>
+            </div>
+        </label>
+        <aside>
+            <div class="title-box">
+                <h1>COVID-19</h1>
+                <span>Casos globais</span>
+                <img src="public/icons/close-status.svg" alt="" width="30">
+            </div>
+            <div class="cases-box">
+                <section class="icon-cases">
+                    <img src="public/icons/cases.svg" alt="" width="20">
+                </section>
+                <span>
+                    <h2>Infectados</h2>
+                    <p>615.510</p>
+                </span>
+                
+            </div>
+            <div class="dead-box">
+                <section class="icon-dead">
+                    <img src="public/icons/dead.svg" alt="" width="20">
+                </section>
+                <span>
+                    <h2>Mortos</h2>
+                    <p>28.717</p>
+                </span>
+            </div>
+            <div class="cured-box">
+                <section class="icon-cured">
+                    <img src="public/icons/cured.svg" alt="" width="20">
+                </section>
+                <span>
+                    <h2>Curados</h2>
+                    <p>123.519</p>
+                </span>
+            </div>
+            <div class="countries-box">
+                <section class="icon-countries">
+                    <img src="public/icons/countries.svg" alt="" width="20">
+                </section>
+                <span>
+                    <h2>Países</h2>
+                    <p>177</p>
+                </span>
+            </div>
+        </aside>
+    </div>
+    
+    <script src="public/scripts/map.js"></script>
+    <script src="public/scripts/animations.js"></script>
+</body>
+</html>

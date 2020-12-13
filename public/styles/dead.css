@@ -1,0 +1,45 @@
+.dead-box {
+    width: 100%;
+
+    margin-top: 40px;
+
+    padding-left: 20px;
+
+    display: flex;
+
+}
+
+.icon-dead {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #4e4d52;
+}
+
+.dead-box span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 10px;
+}
+
+.dead-box span h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    color: #c4c4c4;
+}
+
+.dead-box span p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
