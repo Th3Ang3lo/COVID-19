@@ -23,7 +23,6 @@ closeSearchButton.addEventListener('click', () => {
 
 // voice button animation;
 
-
 const utterance = new SpeechSynthesisUtterance()
 const voiceButton = document.querySelector('.voice-button')
 const inputVoice = document.getElementById('voice')

@@ -19,6 +19,7 @@
    <!-- styles -->
    <link rel="stylesheet" href="public/styles/main.css">
    <link rel="stylesheet" href="public/styles/buttons.css">
+   <link rel="stylesheet" href="public/styles/menu.css">
    <link rel="stylesheet" href="public/styles/cases.css">
    <link rel="stylesheet" href="public/styles/dead.css">
    <link rel="stylesheet" href="public/styles/cured.css">
@@ -29,10 +30,10 @@
     <div class="page-container">
         <div id="mapid"></div>
         <div class="search-box">
-            <input type="text" placeholder="Digite o nome país">
-            <div class="search-button">
+            <input type="text" placeholder="Digite o nome país" class="search">
+            <button class="search-button">
                 <i class="fas fa-search"></i>
-            </div>
+            </button>
             <div class="close-search-button">
                 <i class="fas fa-times"></i>
             </div>
@@ -47,7 +48,6 @@
             <div class="title-box">
                 <h1>COVID-19</h1>
                 <span>Casos globais</span>
-                <img src="public/icons/close-status.svg" alt="" width="30">
             </div>
             <div class="cases-box">
                 <section class="icon-cases">
@@ -91,5 +91,6 @@
     
     <script src="public/scripts/map.js"></script>
     <script src="public/scripts/animations.js"></script>
+    <script src="public/scripts/index.js"></script>
 </body>
 </html>
