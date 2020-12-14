@@ -1,4 +1,4 @@
-.cases-box {
+.confirmed-box {
     width: 100%;
 
     margin-top: 40px;
@@ -9,7 +9,7 @@
 
 }
 
-.icon-cases {
+.icon-confirmed {
     width: 60px;
     height: 60px;
 
@@ -22,7 +22,7 @@
     background: #C24A4A;
 }
 
-.cases-box span {
+.confirmed-box span {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,14 +30,14 @@
     padding-left: 10px;
 }
 
-.cases-box span h2 {
+.confirmed-box span h2 {
     font-size: 1.4rem;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     color: #c4c4c4;
 }
 
-.cases-box span p {
+.confirmed-box span p {
     font-size: 1.6rem;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;

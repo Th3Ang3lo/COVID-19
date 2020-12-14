@@ -20,7 +20,7 @@
    <link rel="stylesheet" href="public/styles/main.css">
    <link rel="stylesheet" href="public/styles/buttons.css">
    <link rel="stylesheet" href="public/styles/menu.css">
-   <link rel="stylesheet" href="public/styles/cases.css">
+   <link rel="stylesheet" href="public/styles/confirmed.css">
    <link rel="stylesheet" href="public/styles/dead.css">
    <link rel="stylesheet" href="public/styles/cured.css">
    <link rel="stylesheet" href="public/styles/countries.css">
@@ -47,15 +47,15 @@
         <aside>
             <div class="title-box">
                 <h1>COVID-19</h1>
-                <span>Casos globais</span>
+                <span id="title"></span>
             </div>
-            <div class="cases-box">
-                <section class="icon-cases">
-                    <img src="public/icons/cases.svg" alt="" width="20">
+            <div class="confirmed-box">
+                <section class="icon-confirmed">
+                    <img src="public/icons/confirmed.svg" alt="" width="20">
                 </section>
                 <span>
                     <h2>Infectados</h2>
-                    <p>615.510</p>
+                    <p id="confirmed"></p>
                 </span>
                 
             </div>
@@ -65,7 +65,7 @@
                 </section>
                 <span>
                     <h2>Mortos</h2>
-                    <p>28.717</p>
+                    <p id="dead"></p>
                 </span>
             </div>
             <div class="cured-box">
@@ -74,7 +74,7 @@
                 </section>
                 <span>
                     <h2>Curados</h2>
-                    <p>123.519</p>
+                    <p id="cured"></p>
                 </span>
             </div>
             <div class="countries-box">
@@ -83,14 +83,15 @@
                 </section>
                 <span>
                     <h2>Países</h2>
-                    <p>177</p>
+                    <p id="countries"></p>
                 </span>
             </div>
         </aside>
     </div>
     
     <script src="public/scripts/map.js"></script>
-    <script src="public/scripts/animations.js"></script>
     <script src="public/scripts/index.js"></script>
+    <script src="public/scripts/animations.js"></script>
+    <script src="public/scripts/voice.js"></script>
 </body>
 </html>
