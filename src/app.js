@@ -1,23 +1,24 @@
 import express from 'express'
-import routes from './router'
-import cors from 'cors'
+import nunjucks from 'nunjucks'
+import axios from 'axios'
 
-class App {
-    constructor() {
-        this.server = express()
-        this.middlewares()
-        this.router()
-    }
+const app = express()
+app.use(express.static('public'))
 
-    middlewares() {
-        this.server.use(express.json())
-        this.server.use(cors())
-    }
+nunjucks.configure('src/views', {
+    express: app,
+    noCache: true
+})
 
-    router() {
-        this.server.use(routes)
-        
-    }
-}
+app.get('/', async (req, res) => {
+    const { data } = await axios('http://localhost:8080')
+    return res.render('index.html', {
+        title: data.title,
+        confirmed: data.confirmed,
+        dead: data.dead,
+        cured: data.cured,
+        countries: data.countries
+    })
+})
 
-export default new App().server
+app.listen(3000, () => console.log('Online server ready for work !'))

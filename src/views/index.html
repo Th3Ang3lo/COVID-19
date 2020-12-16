@@ -17,19 +17,19 @@
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
    <!-- styles -->
-   <link rel="stylesheet" href="public/styles/main.css">
-   <link rel="stylesheet" href="public/styles/buttons.css">
-   <link rel="stylesheet" href="public/styles/menu.css">
-   <link rel="stylesheet" href="public/styles/confirmed.css">
-   <link rel="stylesheet" href="public/styles/dead.css">
-   <link rel="stylesheet" href="public/styles/cured.css">
-   <link rel="stylesheet" href="public/styles/countries.css">
+   <link rel="stylesheet" href="/styles/main.css">
+   <link rel="stylesheet" href="/styles/buttons.css">
+   <link rel="stylesheet" href="/styles/menu.css">
+   <link rel="stylesheet" href="/styles/confirmed.css">
+   <link rel="stylesheet" href="/styles/dead.css">
+   <link rel="stylesheet" href="/styles/cured.css">
+   <link rel="stylesheet" href="/styles/countries.css">
 
 </head>
 <body>
     <div class="page-container">
         <div id="mapid"></div>
-        <div class="search-box">
+        <form class="search-box">
             <input type="text" placeholder="Digite o nome país" class="search">
             <button class="search-button">
                 <i class="fas fa-search"></i>
@@ -37,7 +37,7 @@
             <div class="close-search-button">
                 <i class="fas fa-times"></i>
             </div>
-        </div>
+        </form>
         <input type="checkbox" id="voice" style="display: none;">
         <label for="voice">
             <div class="voice-button">
@@ -47,51 +47,51 @@
         <aside>
             <div class="title-box">
                 <h1>COVID-19</h1>
-                <span id="title"></span>
+                <span id="title">{{ title }}</span>
             </div>
             <div class="confirmed-box">
                 <section class="icon-confirmed">
-                    <img src="public/icons/confirmed.svg" alt="" width="20">
+                    <img src="/icons/confirmed.svg" alt="" width="30">
                 </section>
                 <span>
                     <h2>Infectados</h2>
-                    <p id="confirmed"></p>
+                    <p id="confirmed">{{ confirmed }}</p>
                 </span>
                 
             </div>
             <div class="dead-box">
                 <section class="icon-dead">
-                    <img src="public/icons/dead.svg" alt="" width="20">
+                    <img src="/icons/dead.svg" alt="" width="30">
                 </section>
                 <span>
                     <h2>Mortos</h2>
-                    <p id="dead"></p>
+                    <p id="dead">{{ dead }}</p>
                 </span>
             </div>
             <div class="cured-box">
                 <section class="icon-cured">
-                    <img src="public/icons/cured.svg" alt="" width="20">
+                    <img src="/icons/cured.svg" alt="" width="30">
                 </section>
                 <span>
                     <h2>Curados</h2>
-                    <p id="cured"></p>
+                    <p id="cured">{{ cured }}</p>
                 </span>
             </div>
             <div class="countries-box">
                 <section class="icon-countries">
-                    <img src="public/icons/countries.svg" alt="" width="20">
+                    <img src="/icons/countries.svg" alt="" width="30">
                 </section>
                 <span>
                     <h2>Países</h2>
-                    <p id="countries"></p>
+                    <p id="countries">{{ countries }}</p>
                 </span>
             </div>
         </aside>
     </div>
     
-    <script src="public/scripts/map.js"></script>
-    <script src="public/scripts/index.js"></script>
-    <script src="public/scripts/animations.js"></script>
-    <script src="public/scripts/voice.js"></script>
+    <script src="/scripts/map.js"></script>
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/animations.js"></script>
+    <script src="/scripts/voice.js"></script>
 </body>
 </html>
