@@ -97,9 +97,9 @@
     transform: translateY(-50%) rotate(360deg);
 }
 
-/* voice button */
+/* global button */
 
-.voice-button {
+.global-button {
     width: 40px;
     height: 40px;
 
@@ -120,9 +120,4 @@
     transition: all 0.5s;
 
     background: #282b2e;
-}
-
-
-.voice-button.active {
-    color: #00ff7f;
 }

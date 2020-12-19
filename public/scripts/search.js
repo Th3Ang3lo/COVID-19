@@ -20,23 +20,4 @@ closeSearchButton.addEventListener('click', () => {
     searchButton.classList.remove('active')
     closeSearchButton.classList.remove('active')
     searchInput.value = ''
-    
 })
-
-// voice animation;
-const utterance = new SpeechSynthesisUtterance()
-utterance.lang = 'en'
-const voiceButton = document.querySelector('.voice-button')
-const inputVoice = document.getElementById('voice')
-
-inputVoice.addEventListener('change', () => {
-    if (inputVoice.checked == true) {
-        voiceButton.classList.add('active')
-        utterance.text = 'Voice search enabled'
-        speechSynthesis.speak(utterance)
-    } else {
-        voiceButton.classList.remove('active')
-    }
-})
-
-
