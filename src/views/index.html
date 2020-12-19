@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,17 +21,17 @@
    <link rel="stylesheet" href="/styles/buttons.css">
    <link rel="stylesheet" href="/styles/menu.css">
    <link rel="stylesheet" href="/styles/confirmed.css">
-   <link rel="stylesheet" href="/styles/dead.css">
-   <link rel="stylesheet" href="/styles/cured.css">
+   <link rel="stylesheet" href="/styles/deaths.css">
+   <link rel="stylesheet" href="/styles/recovered.css">
    <link rel="stylesheet" href="/styles/countries.css">
 
 </head>
 <body>
     <div class="page-container">
         <div id="mapid"></div>
-        <form class="search-box">
-            <input type="text" placeholder="Digite o nome país" class="search">
-            <button class="search-button">
+        <form class="search-box" action="/" method="POST">
+            <input type="text" placeholder="Country name" class="search" name="search">
+            <button class="search-button" type="submit">
                 <i class="fas fa-search"></i>
             </button>
             <div class="close-search-button">
@@ -54,27 +54,27 @@
                     <img src="/icons/confirmed.svg" alt="" width="30">
                 </section>
                 <span>
-                    <h2>Infectados</h2>
+                    <h2>Confirmed</h2>
                     <p id="confirmed">{{ confirmed }}</p>
                 </span>
                 
             </div>
-            <div class="dead-box">
-                <section class="icon-dead">
-                    <img src="/icons/dead.svg" alt="" width="30">
+            <div class="deaths-box">
+                <section class="icon-deaths">
+                    <img src="/icons/deaths.svg" alt="" width="30">
                 </section>
                 <span>
-                    <h2>Mortos</h2>
-                    <p id="dead">{{ dead }}</p>
+                    <h2>Deaths</h2>
+                    <p id="deaths">{{ deaths }}</p>
                 </span>
             </div>
-            <div class="cured-box">
-                <section class="icon-cured">
-                    <img src="/icons/cured.svg" alt="" width="30">
+            <div class="recovered-box">
+                <section class="icon-recovered">
+                    <img src="/icons/recovered.svg" alt="" width="30">
                 </section>
                 <span>
-                    <h2>Curados</h2>
-                    <p id="cured">{{ cured }}</p>
+                    <h2>Recovered</h2>
+                    <p id="recovered">{{ recovered }}</p>
                 </span>
             </div>
             <div class="countries-box">
@@ -82,7 +82,7 @@
                     <img src="/icons/countries.svg" alt="" width="30">
                 </section>
                 <span>
-                    <h2>Países</h2>
+                    <h2>Countries</h2>
                     <p id="countries">{{ countries }}</p>
                 </span>
             </div>
@@ -91,7 +91,6 @@
     
     <script src="/scripts/map.js"></script>
     <script src="/scripts/index.js"></script>
-    <script src="/scripts/animations.js"></script>
-    <script src="/scripts/voice.js"></script>
+    <script src="/scripts/search.js"></script>
 </body>
 </html>

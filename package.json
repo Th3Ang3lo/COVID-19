@@ -6,14 +6,15 @@
   "author": "Lucas Augusto <lucasaugustscode@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "api": "nodemon src/server.js"
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "nunjucks": "^3.2.2"
+    "nunjucks": "^3.2.2",
+    "puppeteer": "^5.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6",

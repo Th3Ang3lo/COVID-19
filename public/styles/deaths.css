@@ -1,4 +1,4 @@
-.cured-box {
+.deaths-box {
     width: 100%;
 
     margin-top: 40px;
@@ -9,7 +9,7 @@
 
 }
 
-.icon-cured {
+.icon-deaths {
     width: 80px;
     height: 80px;
 
@@ -19,10 +19,10 @@
 
     border-radius: 5px;
 
-    background: #5cc1ac;
+    background: #4e4d52;
 }
 
-.cured-box span {
+.deaths-box span {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,17 +30,17 @@
     padding-left: 10px;
 }
 
-.cured-box span h2 {
+.deaths-box span h2 {
     font-size: 2rem;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     color: #c4c4c4;
 }
 
-.cured-box span p {
+.deaths-box span p {
     width: 100%;
     height: 20px;
-    
+
     font-size: 1.8rem;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;

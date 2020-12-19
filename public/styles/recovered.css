@@ -1,4 +1,4 @@
-.dead-box {
+.recovered-box {
     width: 100%;
 
     margin-top: 40px;
@@ -9,7 +9,7 @@
 
 }
 
-.icon-dead {
+.icon-recovered {
     width: 80px;
     height: 80px;
 
@@ -19,10 +19,10 @@
 
     border-radius: 5px;
 
-    background: #4e4d52;
+    background: #5cc1ac;
 }
 
-.dead-box span {
+.recovered-box span {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,17 +30,17 @@
     padding-left: 10px;
 }
 
-.dead-box span h2 {
+.recovered-box span h2 {
     font-size: 2rem;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     color: #c4c4c4;
 }
 
-.dead-box span p {
+.recovered-box span p {
     width: 100%;
     height: 20px;
-
+    
     font-size: 1.8rem;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
