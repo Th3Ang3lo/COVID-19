@@ -31,6 +31,7 @@ server.get('/', async (req, res) => {
     try {
         const url = 'https://covid19-brazil-api.now.sh/api/report/v1/countries'
         const { data } = await axios(url)
+        console.log(data)
         return res.render('index.html', {
             title: 'Global',
             confirmed: GlobalConfirmed(data),

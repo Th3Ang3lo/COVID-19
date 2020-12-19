@@ -5,6 +5,9 @@ const searchBox = document.querySelector('.search-box')
 const searchInput = document.querySelector('input')
 
 searchButton.addEventListener('click', event => {
+    if (!searchBox.classList.contains('active')) {
+        event.preventDefault()
+    }
     searchBox.classList.add('active')
     searchInput.classList.add('active')
     searchButton.classList.add('active')
